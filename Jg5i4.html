@@ -40,7 +40,7 @@ OOOOO
      Miss!     
   A    S    D 
 A,S,D 중 하나를 입력하고 엔터치세요: <b><span style='color:rgb(255,0,0);'>quit</span></b>
-</pre><br> 	  				<h4>알고리즘</h4> 				<pre style='white-space:normal;'>메인 스레드 시작 <br>&nbsp; &nbsp;Drop the Beat 스레드 시작 <br>&nbsp; &nbsp;Hit the Beat 메서드 호출 <br>메인 스레드 종료 <br> <br>Drop the Beat 스레드 시작 <br>&nbsp; &nbsp;주기적으로 한 줄씩 아래로 이동 <br>Drop the Beat 스레드 종료 <br> <br>Hit the Beat 메서드 시작 <br>&nbsp; &nbsp;입력값이 비트가 떨어진 위치에 해당하면 Good!, 아니면 Miss! 출력 <br>Hit the Beat 메서드 종료 <br></pre> 				<br>&nbsp; 
+</pre><br> 	  				<h4>알고리즘</h4> 				<pre style='white-space:normal;'>메인 스레드 시작 <br>&nbsp; &nbsp;Drop the Beat 스레드 시작 <br>&nbsp; &nbsp;Hit the Beat 메서드 호출 <br>메인 스레드 종료 <br> <br>Hit the Beat 메서드 <br>&nbsp; &nbsp;입력값이 비트가 떨어진 위치에 해당하면 Good!, 아니면 Miss! 출력 <br> <br>Drop the Beat 스레드 시작 <br>&nbsp; &nbsp;주기적으로 한 줄씩 아래로 이동 <br>Drop the Beat 스레드 종료 <br></pre> 				<br>&nbsp; 
 <img src='https://shyprogrammer351.github.io/ig3i/multiThread\sequence_RhythmGame.jpg' width='500'> <br>&nbsp; 		 				<br><h4>프로그램 코드 <input id='btn' type='button' value='실행순서 및 메모리상태 확인' onclick='sP3f5();'/></h4>  				<div id = "codeBox">
 <pre id="codeE001" class="unselectable codeClass">E001	<font color="green">// Drop the Beat 스레드 1초간 대기</font>
 </pre>
@@ -106,7 +106,7 @@ A,S,D 중 하나를 입력하고 엔터치세요: <b><span style='color:rgb(255,
 </pre>
 <pre id="codeB1e" class="unselectable codeClass">B1e		}
 </pre><pre id="code0" class="unselectable codeClass">		 
-</pre><pre id="code0" class="unselectable codeClass">		<font color="green">//<b> Hit the Beat 메서드 시작 </b></font>
+</pre><pre id="code0" class="unselectable codeClass">		<font color="green">//<b> Hit the Beat 메서드 </b></font>
 </pre>
 <pre id="codeB2b" class="unselectable codeClass">B2b		<a href='../Jf1i/Jf1i0.html' target='keyword'>public</a> void hit() {
 </pre><pre id="code0" class="unselectable codeClass">			Scanner scan = <a href='../Jf2i/Jf2i0.html' target='keyword'>new</a> Scanner( System.in );
@@ -135,7 +135,6 @@ A,S,D 중 하나를 입력하고 엔터치세요: <b><span style='color:rgb(255,
 </pre>
 <pre id="codeB24" class="unselectable codeClass">B24			} while( in.equals("a") || in.equals("s") || in.equals("d") || in.equals("A") || in.equals("S") || in.equals("D") );
 </pre><pre id="code0" class="unselectable codeClass">			scan.close();
-</pre><pre id="code0" class="unselectable codeClass">		<font color="green">//<b> Hit the Beat 메서드 종료 </b></font>
 </pre>
 <pre id="codeB2e" class="unselectable codeClass">B2e		}
 </pre><pre id="code0" class="unselectable codeClass">	}
