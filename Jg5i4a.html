@@ -1,43 +1,6 @@
-<!DOCTYPE html> <html> 	<head> 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"></script> 		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.9/jquery-ui.min.js"></script> 		<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7250753558435816" crossorigin="anonymous"></script> 		<script type="text/javascript" src="../functions.js"></script> 		<link rel="stylesheet" href="../layout.css"> 		<script> 			const sP3d10 = [ [ "0", "메인 스레드 시작" ], [ "2", "-Hit the Beat 메서드 호출" ], [ "5", "-입력값이 비트가 떨어진 위치에 해당하면 Good!, 아니면 Miss! 출력" ], [ "3", "메인 스레드 종료" ], [ "4", "Hit the Beat 메서드" ], [ "7", "-주기적으로 한 줄씩 아래로 이동" ], [ "6", "Drop the Beat 스레드 시작" ], [ "1", "-Drop the Beat 스레드 시작" ], [ "8", "Drop the Beat 스레드 종료" ], 							]; 		</script> 	</head> 	<body onload='sP3f3();' oncontextmenu="return false" onselectstart="return false" oncopy="return false" oncut="return false" onpaste="return false"> 		<div id = "container"> 			<div id = "titleBox"> JAVA 프로그래밍 </div> 			<div id = "navigationBox"><ol start=0><li><a href='../Jf0i/Jf0i0.html'>JAVA 프로그래밍 시작</a></li><li><a href='../Jf1i/Jf1i0.html'>출력</a></li><li><a href='../Jf2i/Jf2i0.html'>입력</a></li><li><a href='../Jf3i/Jf3i0.html'>변수</a></li><li><a href='../Jf4i/Jf4i0.html'>연산자</a></li><li><a href='../Jf5i/Jf5i0.html'>선택문(삼항연산자/switch)</a></li><li><a href='../Jf6i/Jf6i0.html'>선택문(if)</a></li><li><a href='../Jf7i/Jf7i0.html'>반복문(while)</a></li><li><a href='../Jf8i/Jf8i0.html'>반복문(for)</a></li><li><a href='../Jf9i/Jf9i0.html'>배열</a></li><li><a href='../Jg0i/Jg0i0.html'>문자열/컬렉션</a></li><li><a href='../Jg1i/Jg1i0.html'>클래스/패키지</a></li><li><a href='../Jg2i/Jg2i0.html'>상속/다형성</a></li><li><a href='../Jg3i/Jg3i0.html'>GUI기초</a></li><li><a href='../Jg4i/Jg4i0.html'>GUI응용</a></li><li><a href='../Jg5i/Jg5i0.html'>예외/스레드</a></li><ul><li><a href='../Jg5i/Jg5i1.html'>입출력 예외</a></li><li><a href='../Jg5i/Jg5i2.html'>숫자 예외</a></li><li><a href='../Jg5i/Jg5i3.html'>참조 예외</a></li><li><a href='../Jg5i/Jg5i4.html'>리듬 게임</a></li><ul><li><a href='Jg5i4.html'>코드읽기</a></li><li><a href='Jg5i4a.html'>알고리즘</a></li><li><a href='Jg5i4k.html'>키워드</a></li><li><a href='Jg5i4b.html'>빈칸채우기</a></li><li><a href='Jg5i4s.html'>실행순서</a></li><li><a href='Jg5i4m.html'>실행상태</a></li><li><a href='https://github.com/CodeReading101/JAVA/blob/main/Chapter15/RhythmGame.java' target='code'>소스코드</a></li></ul><li><a href='../Jg5i/Jg5i5.html'>달리기 대회</a></li></ul><li><a href='../Jg6i/Jg6i0.html'>파일입출력</a></li><li><a href='../Jg7i/Jg7i0.html'>네트워크(1:1)</a></li><li><a href='../Jg8i/Jg8i0.html'>네트워크(1:n)</a></li><li><a href='../Jg9i/Jg9i0.html'>열거형/제네릭</a></li><li><a href='../Jh0i/Jh0i0.html'>재귀호출</a></li></ol></div>  			<div id = "contentBox"> 				<h4>문제</h4> 				<pre style='white-space:normal;'>1초마다 비트가 아래로 떨어지면, A(왼쪽),S(중앙),D(오른쪽) 중 하나를 입력받아 맞추는 문제입니다 이를 해결하는 방법을 아래 참고자료에서 한줄씩 복붙해서 설명하세요 </pre> 				<pre class='selectable'>     OOOOO     
-     OOOOO     
-OOOOO          
-          OOOOO
-     OOOOO     
-  A    S    D 
-A,S,D 중 하나를 입력하고 엔터치세요: <b><span style='color:rgb(255,0,0);'>s</span></b>
-     OOOOO     
-     OOOOO     
-OOOOO          
-          OOOOO
-     Good!     
-  A    S    D 
-A,S,D 중 하나를 입력하고 엔터치세요: <b><span style='color:rgb(255,0,0);'>d</span></b>
-          OOOOO
-     OOOOO     
-     OOOOO     
-OOOOO          
-          Good!
-  A    S    D 
-A,S,D 중 하나를 입력하고 엔터치세요: <b><span style='color:rgb(255,0,0);'>quit</span></b>
-</pre><br><pre class='selectable'>     OOOOO     
-     OOOOO     
-OOOOO          
-          OOOOO
-     OOOOO     
-  A    S    D 
-A,S,D 중 하나를 입력하고 엔터치세요: <b><span style='color:rgb(255,0,0);'>d</span></b>
-     OOOOO     
-     OOOOO     
-OOOOO          
-          OOOOO
-          Miss!
-  A    S    D 
-A,S,D 중 하나를 입력하고 엔터치세요: <b><span style='color:rgb(255,0,0);'>s</span></b>
-          OOOOO
-     OOOOO     
-     OOOOO     
-OOOOO          
-     Miss!     
-  A    S    D 
-A,S,D 중 하나를 입력하고 엔터치세요: <b><span style='color:rgb(255,0,0);'>quit</span></b>
+<!DOCTYPE html> <html> 	<head> 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"></script> 		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.9/jquery-ui.min.js"></script> 		<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7250753558435816" crossorigin="anonymous"></script> 		<script type="text/javascript" src="../functions.js"></script> 		<link rel="stylesheet" href="../layout.css"> 		<script> 			const sP3d10 = [ [ "0", "뷰 패널" ], [ "13", "--아니면, 캐릭터 및 폭탄의 현재 게임 상황 출력" ], [ "23", "-폭탄 초기화 : 위쪽(임의위치)에서 아래쪽으로 폭탄을 투하" ], [ "21", "-이동 허용 범위내에서만 객체 이동" ], [ "12", "--또는, HP가 더 이상 없으면 실패 출력" ], [ "5", "폭탄 피하기 패널" ], [ "2", "-주기적으로 활성화되는 타이머 등록" ], [ "9", "---캐릭터와 폭탄이 충돌하면 캐릭터 HP 감소" ], [ "3", "--최신 정보 업데이트" ], [ "20", "-키를 해제하면 이동방향 해제" ], [ "11", "--먼저, 제한시간동안 폭탄을 피해 살아남으면 성공 출력" ], [ "15", "-최신 정보 업데이트(Override2)" ], [ "1", "-키리스너에 방향키로 이동하는 캐릭터를 등록" ], [ "8", "--캐릭터는 좌우로 이동하고 HP 업데이트" ], [ "14", "총알 피하기 패널" ], [ "19", "-키를 누르면 상하좌우 이동방향 설정" ], [ "16", "--모든 총알은 오른쪽으로 이동하며, 주기적으로 새 총알을 발사" ], [ "10", "-화면 출력(Override)" ], [ "18", "방향키로 이동하는 객체" ], [ "7", "--모든 폭탄은 아래로 떨어지며, 주기적으로 새 폭탄을 투하" ], [ "17", "--캐릭터는 상하로 이동하고 HP 업데이트" ], [ "24", "-총알 초기화 : 왼쪽(임의위치)에서 오른쪽으로 총알을 발사" ], [ "22", "충돌가능한 객체" ], [ "6", "-최신 정보 업데이트(Override)" ], [ "4", "--화면 출력" ], [ "25", "-다른 객체와 충돌하거나 이동 허용 범위를 벗어나는지 여부 확인" ], 							]; 		</script> 	</head> 	<body onload='sP3f3();' oncontextmenu="return false" onselectstart="return false" oncopy="return false" oncut="return false" onpaste="return false"> 		<div id = "container"> 			<div id = "titleBox"> JAVA 프로그래밍 </div> 			<div id = "navigationBox"><ol start=1><li><a href='../Jf1i/Jf1i0.html'>JAVA 프로그래밍 시작</a></li><li><a href='../Jf2i/Jf2i0.html'>출력</a></li><li><a href='../Jf3i/Jf3i0.html'>입력</a></li><li><a href='../Jf4i/Jf4i0.html'>변수</a></li><li><a href='../Jf5i/Jf5i0.html'>연산자</a></li><li><a href='../Jf6i/Jf6i0.html'>선택문(삼항연산자/switch)</a></li><li><a href='../Jf7i/Jf7i0.html'>선택문(if)</a></li><li><a href='../Jf8i/Jf8i0.html'>반복문(while)</a></li><li><a href='../Jf9i/Jf9i0.html'>반복문(for)</a></li><li><a href='../Jg0i/Jg0i0.html'>배열</a></li><li><a href='../Jg1i/Jg1i0.html'>문자열/컬렉션</a></li><li><a href='../Jg2i/Jg2i0.html'>클래스/패키지</a></li><li><a href='../Jg3i/Jg3i0.html'>상속/다형성</a></li><li><a href='../Jg4i/Jg4i0.html'>GUI기초</a></li><li><a href='../Jg5i/Jg5i0.html'>GUI응용</a></li><ul><li><a href='../Jg5i/Jg5i1.html'>탑 뷰 게임</a></li><li><a href='../Jg5i/Jg5i2.html'>사이드 뷰 게임</a></li><li><a href='../Jg5i/Jg5i3.html'>폭탄 피하기</a></li><li><a href='../Jg5i/Jg5i4.html'>총알 피하기</a></li><ul><li><a href='Jg5i4.html'>코드읽기</a></li><li><a href='Jg5i4s.html'>실행순서</a></li><li><a href='https://github.com/CodeReading101/JAVA/blob/main/Chapter15/BulletDodgeGameMain.java' target='code'>소스코드</a></li></ul><li><a href='../Jg5i/Jg5i5.html'>리모컨-TV</a></li></ul><li><a href='../Jg6i/Jg6i0.html'>예외/스레드</a></li><li><a href='../Jg7i/Jg7i0.html'>파일입출력</a></li><li><a href='../Jg8i/Jg8i0.html'>네트워크(1:1)</a></li><li><a href='../Jg9i/Jg9i0.html'>네트워크(1:n)</a></li><li><a href='../Jh0i/Jh0i0.html'>열거형/제네릭</a></li><li><a href='../Jh1i/Jh1i0.html'>재귀호출</a></li></ol></div>  			<div id = "contentBox"> 				<h4>문제</h4> 				<pre style='white-space:normal;'>왼쪽에서 날아오는 총알을 피해 살아남아야 하는 게임입니다 이를 해결하는 방법을 아래 참고자료에서 한줄씩 복붙해서 설명하세요 </pre> 				
+<img width="150" src = "https://shyprogrammer351.github.io/ig3i/move/bulletDodge_1.jpg" >
+<img width="150" src = "https://shyprogrammer351.github.io/ig3i/move/bulletDodge_3.jpg" >
+<img width="150" src = "https://shyprogrammer351.github.io/ig3i/move/bulletDodge_4.jpg" >
+<pre> 
 </pre><br>  	 				<h4>알고리즘</h4> 				<div id="card" style='width:1200px;'> 	  				<div id="cardSlots"></div> 	  				<div id="cardPile"></div> 				</div> 				<br><br><br><br><br><br><br><br> &nbsp;  			</div> 		</div> 	</body>  </html>  

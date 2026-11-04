@@ -1,72 +1,380 @@
-<html> 	<head> 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 		<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7250753558435816" crossorigin="anonymous"></script> 		<link rel="stylesheet" href="../layout.css"> 		<script type="text/javascript" src="../functions.js"></script> 		<script type="text/javascript" src="../Js0J1f/J1502.js"></script> 	</head> 	<body onkeydown='sP3f4();' oncontextmenu="return false" onselectstart="return false" oncopy="return false" oncut="return false" onpaste="return false" draggable="false" ondragstart="return false" ondrop="return false"> 		<div id = "container"> 			<div id = "titleBox"> JAVA 프로그래밍 </div> 			<div id = "navigationBox"><ol start=0><li><a href='../Jf0i/Jf0i0.html'>JAVA 프로그래밍 시작</a></li><li><a href='../Jf1i/Jf1i0.html'>출력</a></li><li><a href='../Jf2i/Jf2i0.html'>입력</a></li><li><a href='../Jf3i/Jf3i0.html'>변수</a></li><li><a href='../Jf4i/Jf4i0.html'>연산자</a></li><li><a href='../Jf5i/Jf5i0.html'>선택문(삼항연산자/switch)</a></li><li><a href='../Jf6i/Jf6i0.html'>선택문(if)</a></li><li><a href='../Jf7i/Jf7i0.html'>반복문(while)</a></li><li><a href='../Jf8i/Jf8i0.html'>반복문(for)</a></li><li><a href='../Jf9i/Jf9i0.html'>배열</a></li><li><a href='../Jg0i/Jg0i0.html'>문자열/컬렉션</a></li><li><a href='../Jg1i/Jg1i0.html'>클래스/패키지</a></li><li><a href='../Jg2i/Jg2i0.html'>상속/다형성</a></li><li><a href='../Jg3i/Jg3i0.html'>GUI기초</a></li><li><a href='../Jg4i/Jg4i0.html'>GUI응용</a></li><li><a href='../Jg5i/Jg5i0.html'>예외/스레드</a></li><ul><li><a href='../Jg5i/Jg5i1.html'>입출력 예외</a></li><li><a href='../Jg5i/Jg5i2.html'>숫자 예외</a></li><ul><li><a href='Jg5i2.html'>코드읽기</a></li><li><a href='Jg5i2a.html'>알고리즘</a></li><li><a href='Jg5i2k.html'>키워드</a></li><li><a href='Jg5i2b.html'>빈칸채우기</a></li><li><a href='Jg5i2s.html'>실행순서</a></li><li><a href='Jg5i2m.html'>실행상태</a></li><li><a href='https://github.com/CodeReading101/JAVA/blob/main/Chapter15/NumberExceptions.java' target='code'>소스코드</a></li></ul><li><a href='../Jg5i/Jg5i3.html'>참조 예외</a></li><li><a href='../Jg5i/Jg5i4.html'>리듬 게임</a></li><li><a href='../Jg5i/Jg5i5.html'>달리기 대회</a></li></ul><li><a href='../Jg6i/Jg6i0.html'>파일입출력</a></li><li><a href='../Jg7i/Jg7i0.html'>네트워크(1:1)</a></li><li><a href='../Jg8i/Jg8i0.html'>네트워크(1:n)</a></li><li><a href='../Jg9i/Jg9i0.html'>열거형/제네릭</a></li><li><a href='../Jh0i/Jh0i0.html'>재귀호출</a></li></ol></div>  			<div id = "contentBox"> 				<h4>문제</h4> 				<pre style='white-space:normal;'>두 숫자를 입력받아 사칙연산을 수행하고 예외가 발생하면 이를 처리하는 문제입니다 이를 해결하는 다음 프로그램을 해석하세요 </pre> 				<pre class='selectable'>사칙연산을 위한 첫번째 숫자를 입력하세요: <b><span style='color:rgb(255,0,0);'>a</span></b>
-숫자 형식 불일치
-예외 실습 완료 
-</pre><br><pre class='selectable'>사칙연산을 위한 첫번째 숫자를 입력하세요: <b><span style='color:rgb(255,0,0);'>2</span></b>
-사칙연산을 위한 두번째 숫자를 입력하세요: <b><span style='color:rgb(255,0,0);'>b</span></b>
-입력 자료형 불일치
-예외 실습 완료 
-</pre><br><pre class='selectable'>사칙연산을 위한 첫번째 숫자를 입력하세요: <b><span style='color:rgb(255,0,0);'>2</span></b>
-사칙연산을 위한 두번째 숫자를 입력하세요: <b><span style='color:rgb(255,0,0);'>0</span></b>
-2 + 0 = 2
-2 - 0 = 2
-2 * 0 = 0
-산술 연산 오류
-예외 실습 완료 
-</pre><br> 	  				<h4>알고리즘</h4> 				<pre style='white-space:normal;'>프로그램 시작 <br>&nbsp; &nbsp;사칙연산을 위한 숫자 입력 <br>&nbsp; &nbsp;사칙연산 수행 및 결과 출력 <br>&nbsp; &nbsp;예외 처리 <br>프로그램 종료 <br></pre> 				 		 				<br><h4>프로그램 코드 <input id='btn' type='button' value='실행순서 및 메모리상태 확인' onclick='sP3f5();'/></h4>  				<div id = "codeBox"><pre id="code0" class="unselectable codeClass">	<font color="green">// 파일명 : ./Chapter15/NumberExceptions.java</font>
-</pre><pre id="code0" class="unselectable codeClass">	import java.util.*;
-</pre><pre id="code0" class="unselectable codeClass">	 
-</pre><pre id="code0" class="unselectable codeClass">	public class NumberExceptions
+<html> 	<head> 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 		<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7250753558435816" crossorigin="anonymous"></script> 		<link rel="stylesheet" href="../layout.css"> 		<script type="text/javascript" src="../functions.js"></script> 		<script type="text/javascript" src="../Js0J1f/J1502.js"></script> 	</head> 	<body onkeydown='sP3f4();' oncontextmenu="return false" onselectstart="return false" oncopy="return false" oncut="return false" onpaste="return false" draggable="false" ondragstart="return false" ondrop="return false"> 		<div id = "container"> 			<div id = "titleBox"> JAVA 프로그래밍 </div> 			<div id = "navigationBox"><ol start=1><li><a href='../Jf1i/Jf1i0.html'>JAVA 프로그래밍 시작</a></li><li><a href='../Jf2i/Jf2i0.html'>출력</a></li><li><a href='../Jf3i/Jf3i0.html'>입력</a></li><li><a href='../Jf4i/Jf4i0.html'>변수</a></li><li><a href='../Jf5i/Jf5i0.html'>연산자</a></li><li><a href='../Jf6i/Jf6i0.html'>선택문(삼항연산자/switch)</a></li><li><a href='../Jf7i/Jf7i0.html'>선택문(if)</a></li><li><a href='../Jf8i/Jf8i0.html'>반복문(while)</a></li><li><a href='../Jf9i/Jf9i0.html'>반복문(for)</a></li><li><a href='../Jg0i/Jg0i0.html'>배열</a></li><li><a href='../Jg1i/Jg1i0.html'>문자열/컬렉션</a></li><li><a href='../Jg2i/Jg2i0.html'>클래스/패키지</a></li><li><a href='../Jg3i/Jg3i0.html'>상속/다형성</a></li><li><a href='../Jg4i/Jg4i0.html'>GUI기초</a></li><li><a href='../Jg5i/Jg5i0.html'>GUI응용</a></li><ul><li><a href='../Jg5i/Jg5i1.html'>탑 뷰 게임</a></li><li><a href='../Jg5i/Jg5i2.html'>사이드 뷰 게임</a></li><ul><li><a href='Jg5i2.html'>코드읽기</a></li><li><a href='Jg5i2s.html'>실행순서</a></li><li><a href='https://github.com/CodeReading101/JAVA/blob/main/Chapter15/SideViewGameMain.java' target='code'>소스코드</a></li></ul><li><a href='../Jg5i/Jg5i3.html'>폭탄 피하기</a></li><li><a href='../Jg5i/Jg5i4.html'>총알 피하기</a></li><li><a href='../Jg5i/Jg5i5.html'>리모컨-TV</a></li></ul><li><a href='../Jg6i/Jg6i0.html'>예외/스레드</a></li><li><a href='../Jg7i/Jg7i0.html'>파일입출력</a></li><li><a href='../Jg8i/Jg8i0.html'>네트워크(1:1)</a></li><li><a href='../Jg9i/Jg9i0.html'>네트워크(1:n)</a></li><li><a href='../Jh0i/Jh0i0.html'>열거형/제네릭</a></li><li><a href='../Jh1i/Jh1i0.html'>재귀호출</a></li></ol></div>  			<div id = "contentBox"> 				<h4>문제</h4> 				<pre style='white-space:normal;'>사이드 뷰 맵에서 방향키를 이용하여 캐릭터가 점프하거나 이동하는 문제입니다 이를 해결하는 프로그램을 작성하세요 </pre> 				
+<img width="150" src = "https://shyprogrammer351.github.io/ig3i/move/sideView_1.jpg" >
+<img width="150" src = "https://shyprogrammer351.github.io/ig3i/move/sideView_2.jpg" >
+<img width="150" src = "https://shyprogrammer351.github.io/ig3i/move/sideView_3.jpg" >
+<pre> 
+</pre><br> 	  				<h4>알고리즘 설계</h4> 				<pre style='white-space:normal;'>뷰 패널 <br>&nbsp; &nbsp;키리스너에 방향키로 이동하는 캐릭터를 등록 <br>&nbsp; &nbsp;주기적으로 활성화되는 타이머 등록 <br>&nbsp; &nbsp;&nbsp; &nbsp;최신 정보 업데이트 <br>&nbsp; &nbsp;&nbsp; &nbsp;화면 출력 <br> <br> <br>방향키로 이동하는 객체 <br>&nbsp; &nbsp;키를 누르면 상하좌우 이동방향 설정 <br>&nbsp; &nbsp;키를 해제하면 이동방향 해제 <br>&nbsp; &nbsp;이동 허용 범위내에서만 객체 이동 <br> <br>탑 뷰 캐릭터 <br>&nbsp; &nbsp;벽이 아니면 캐릭터 이동 <br>&nbsp; &nbsp;캐릭터와 전체 맵을 출력 <br> <br>사이드 뷰 캐릭터 <br>&nbsp; &nbsp;키를 누르면 이동방향을 설정하거나 점프 이동 <br>&nbsp; &nbsp;바닥까지 캐릭터 자유 낙하 <br>&nbsp; &nbsp;캐릭터와 주변 맵을 출력 <br></pre> 				<br><br>&nbsp; <span style='font-family:arial; font-size:14px;'>이미지: 길, 벽, 캐릭터 </span>  <br><br>&nbsp; 
+<img src='https://shyprogrammer351.github.io/ig3i/move/view_image.jpg' width='150'> <br><br>&nbsp; <span style='font-family:arial; font-size:14px;'>사이드 뷰 게임의 클래스 다이어그램</span>  <br><br>&nbsp; 
+<img src='https://shyprogrammer351.github.io/ig3i/move/outline_sideViewGame.jpg' width='600'> <br><br>&nbsp; 
+<img src='https://shyprogrammer351.github.io/ig3i/move/sequence_sideViewGame.jpg' width='500'> <br>&nbsp; <span style='font-family:arial; font-size:14px;'>사이드 뷰 게임의 초기화 과정</span>  <br><br>&nbsp; 
+<img src='https://shyprogrammer351.github.io/ig3i/move/sequence_sideViewGame_init.jpg' width='500'> <br><br>&nbsp; <span style='font-family:arial; font-size:14px;'>사이드 뷰 게임에서 방향키 입력시 처리 과정</span>   <br><br>&nbsp; 
+<img src='https://shyprogrammer351.github.io/ig3i/move/sequence_sideViewGame_keyPressed.jpg' width='500'> <br><br>&nbsp; <span style='font-family:arial; font-size:14px;'>사이드 뷰 게임에서 주기적으로 화면 업데이트 과정</span> <br><br>&nbsp; 
+<img src='https://shyprogrammer351.github.io/ig3i/move/sequence_sideViewGame_actionPerformed.jpg' width='500'> <br> &nbsp; 		 				<br> 				<table> 					<tr> 						<td><h4> 프로그램 구현 </h4> </td> 						<td> &nbsp; &nbsp; &nbsp; <input id='btn' type='button' value='실행 순서·상태 점검' onclick='sP3f5();'/><br> &nbsp; </td> 						<td> <pre style='white-space:normal; width:400px;'> ※ 단계별 점검: A키(이전), D키(다음) <br> &nbsp; </pre></td> 					</tr> 				</table> 				<div id = "codeBox">
+<pre id="codeE001" class="unselectable codeClass">E001	<font color="green">// 이벤트 대기중</font>
+</pre>
+<pre id="codeE002" class="unselectable codeClass">E002	<font color="green">// 'e' 키 입력</font>
+</pre>
+<pre id="codeE003" class="unselectable codeClass">E003	<font color="green">// 1초마다 타이머 활성화</font>
+</pre><pre id="code0" class="unselectable codeClass">		  
+</pre><pre id="code0" class="unselectable codeClass">	<font color="green">// 파일명 : ./Chapter15/SideViewGameMain.java</font>
+</pre><pre id="code0" class="unselectable codeClass">	import javax.swing.*;
+</pre><pre id="code0" class="unselectable codeClass">	import move.SideViewObject;
+</pre><pre id="code0" class="unselectable codeClass">	import move.ViewPanel;
+</pre><pre id="code0" class="unselectable codeClass">		  
+</pre><pre id="code0" class="unselectable codeClass">	public <a href='../Jf1i/Jf1i0.html' target='keyword'>class</a> SideViewGameMain
 </pre><pre id="code0" class="unselectable codeClass">	{
-</pre><pre id="code0" class="unselectable codeClass">		<font color="green">//<b> 프로그램 시작 </b></font>
 </pre>
-<pre id="code1" class="unselectable codeClass">1		public static void main( String args[] ) {
-</pre><pre id="code0" class="unselectable codeClass">			try {
-</pre><pre id="code0" class="unselectable codeClass">				Scanner scan = new Scanner( System.in );
-</pre><pre id="code0" class="unselectable codeClass">				<font color="green">//<b> 사칙연산을 위한 숫자 입력 </b></font>
-</pre><pre id="code0" class="unselectable codeClass">				System.out.print( "사칙연산을 위한 첫번째 숫자를 입력하세요: " );
+<pre id="code1" class="unselectable codeClass">1		public static void main( String[] args )
+</pre><pre id="code0" class="unselectable codeClass">		{
+</pre><pre id="code0" class="unselectable codeClass">			final String imagePath = "C : \\Users\\user\\Downloads\\JAVA-main\\src\\move\\image\\";
+</pre><pre id="code0" class="unselectable codeClass">			int[][] map = { { 1,1,1,1,1,1,1,1,1,1,1,1,1 },
+</pre><pre id="code0" class="unselectable codeClass">			                { 1,0,0,0,0,0,0,0,0,0,0,0,1 },
+</pre><pre id="code0" class="unselectable codeClass">			                { 1,0,0,0,1,1,1,0,0,0,0,0,1 },
+</pre><pre id="code0" class="unselectable codeClass">			                { 1,0,0,0,0,0,0,0,0,0,0,0,1 },
+</pre><pre id="code0" class="unselectable codeClass">			                { 1,0,0,0,0,0,1,1,1,1,0,0,1 },
+</pre><pre id="code0" class="unselectable codeClass">			                { 1,0,0,0,0,0,0,0,0,0,0,0,1 },
+</pre><pre id="code0" class="unselectable codeClass">			                { 1,0,0,1,1,1,1,0,0,0,1,0,1 },
+</pre><pre id="code0" class="unselectable codeClass">			                { 1,0,0,0,0,0,0,0,0,0,0,0,1 },
+</pre><pre id="code0" class="unselectable codeClass">			                { 1,1,1,1,1,1,1,1,1,1,1,1,1 }
+</pre><pre id="code0" class="unselectable codeClass">			              };
+</pre><pre id="code0" class="unselectable codeClass">		  
+</pre><pre id="code0" class="unselectable codeClass">			<font color="green">// 프레임에 패널을 끼우고 실행 준비 완료</font>
 </pre>
-<pre id="code2" class="unselectable codeClass">2				int num1 =
+<pre id="code2" class="unselectable codeClass">2			ViewPanel panel =
 </pre>
-<pre id="code3" class="unselectable codeClass">3				           Integer.parseInt(
+<pre id="code3" class="unselectable codeClass">3			                  new ViewPanel(
 </pre>
-<pre id="code4" class="unselectable codeClass">4				                             scan.nextLine() );
-</pre><pre id="code0" class="unselectable codeClass">				System.out.print( "사칙연산을 위한 두번째 숫자를 입력하세요: " );
+<pre id="code4" class="unselectable codeClass">4			                                 new SideViewObject( map, 4, 5, imagePath ) );
+</pre><pre id="code0" class="unselectable codeClass">			JFrame frame = new JFrame( "사이드 뷰 맵" );
+</pre><pre id="code0" class="unselectable codeClass">			frame.getContentPane().add( panel );
+</pre><pre id="code0" class="unselectable codeClass">			frame.setDefaultCloseOperation( JFrame.EXIT_ON_CLOSE );
+</pre><pre id="code0" class="unselectable codeClass">			frame.pack();
+</pre><pre id="code0" class="unselectable codeClass">			frame.setVisible(true);
 </pre>
-<pre id="code5" class="unselectable codeClass">5				int num2 =
-</pre>
-<pre id="code6" class="unselectable codeClass">6				           scan.nextInt();
-</pre><pre id="code0" class="unselectable codeClass">				 
-</pre><pre id="code0" class="unselectable codeClass">				<font color="green">//<b> 사칙연산 수행 및 결과 출력 </b></font>
-</pre><pre id="code0" class="unselectable codeClass">				System.out.println( num1 + " + " + num2 + " = " + ( num1 + num2 ) );
-</pre><pre id="code0" class="unselectable codeClass">				System.out.println( num1 + " - " + num2 + " = " + ( num1 - num2 ) );
-</pre><pre id="code0" class="unselectable codeClass">				System.out.println( num1 + " * " + num2 + " = " + ( num1 * num2 ) );
-</pre>
-<pre id="code7" class="unselectable codeClass">7				System.out.println( num1 + " / " + num2 + " = " + ( num1 / num2 ) );
-</pre><pre id="code0" class="unselectable codeClass">			}
-</pre><pre id="code0" class="unselectable codeClass">			<font color="green">//<b> 예외 처리 </b></font>
-</pre>
-<pre id="code8" class="unselectable codeClass">8			catch ( NumberFormatException e ) {
-</pre>
-<pre id="code9" class="unselectable codeClass">9				System.out.println( "숫자 형식 불일치" );
-</pre><pre id="code0" class="unselectable codeClass">			}
-</pre>
-<pre id="code10" class="unselectable codeClass">10			catch ( InputMismatchException e ) {
-</pre>
-<pre id="code11" class="unselectable codeClass">11		 		System.out.println( "입력 자료형 불일치" );
-</pre><pre id="code0" class="unselectable codeClass">			}
-</pre>
-<pre id="code12" class="unselectable codeClass">12			catch ( ArithmeticException e ) {
-</pre>
-<pre id="code13" class="unselectable codeClass">13				System.out.println( "산술 연산 오류" );
-</pre><pre id="code0" class="unselectable codeClass">			}
-</pre>
-<pre id="code14" class="unselectable codeClass">14			finally {
-</pre>
-<pre id="code15" class="unselectable codeClass">15				System.out.println( "예외 실습 완료" );
-</pre><pre id="code0" class="unselectable codeClass">			}
-</pre><pre id="code0" class="unselectable codeClass">			 
-</pre><pre id="code0" class="unselectable codeClass">		<font color="green">//<b> 프로그램 종료 </b></font>
-</pre>
-<pre id="code16" class="unselectable codeClass">16		}
+<pre id="code5" class="unselectable codeClass">5		}
 </pre><pre id="code0" class="unselectable codeClass">	}
-</pre></div>	 	 				<br><h4>실행 순서</h4> 				<pre id = "sP3d4" style='white-space:normal; width:800px;'> </pre> 				<pre style='white-space:normal;'> 					※ 실행순서 및 메모리상태는 A키(이전) 및 D키(다음)를 눌러도 확인할 수 있습니다  				</pre> 				<br><br><br><br><br><br><br><br> &nbsp;  			</div> 			<div id = "floatingBox" style = "top:200px;left:900px;margin:0px;padding:0px;"> 				<pre id = "outputBox" class ="outputBox" style = "color:White;height:125px;width:460px;padding:10px;margin:0px;"></pre>  				<div id = "intermediateResult"> 					<img id = "sP3d7"> 					<table style = "border-spacing:0px;margin:0px;table-layout:auto;"> 						<tbody id = "sP3d8"></tbody> 					</table> 				</div> 			</div> 		</div> 	</body> </html> 
+</pre><pre id="code0" class="unselectable codeClass">		  
+</pre><pre id="code0" class="unselectable codeClass">	<font color="green">// 파일명 : ./src/move/ViewPanel.java</font>
+</pre><pre id="code0" class="unselectable codeClass">	package move;
+</pre><pre id="code0" class="unselectable codeClass">		  
+</pre><pre id="code0" class="unselectable codeClass">	import java.awt.*;
+</pre><pre id="code0" class="unselectable codeClass">	import java.awt.event.*;
+</pre><pre id="code0" class="unselectable codeClass">	import javax.swing.*;
+</pre><pre id="code0" class="unselectable codeClass">		  
+</pre><pre id="code0" class="unselectable codeClass">	<font color="green">//<b> 뷰 패널  </b></font>
+</pre><pre id="code0" class="unselectable codeClass">	public <a href='../Jf1i/Jf1i0.html' target='keyword'>class</a> ViewPanel extends JPanel
+</pre><pre id="code0" class="unselectable codeClass">	{
+</pre><pre id="code0" class="unselectable codeClass">		protected ObjectByKey character;
+</pre><pre id="code0" class="unselectable codeClass">		protected Timer timer;
+</pre><pre id="code0" class="unselectable codeClass">		  
+</pre>
+<pre id="codeV1b" class="unselectable codeClass">V1b		public ViewPanel( ObjectByKey character ){
+</pre><pre id="code0" class="unselectable codeClass">			<font color="green">//<b> 키리스너에 방향키로 이동하는 캐릭터를 등록   </b></font>
+</pre><pre id="code0" class="unselectable codeClass">			this.character = character;
+</pre><pre id="code0" class="unselectable codeClass">			addKeyListener( character );
+</pre><pre id="code0" class="unselectable codeClass">			setFocusable( true );
+</pre><pre id="code0" class="unselectable codeClass">			requestFocus();
+</pre><pre id="code0" class="unselectable codeClass">			setPreferredSize( new Dimension( character.backgroundWidth(), character.backgroundHeight() ) );
+</pre><pre id="code0" class="unselectable codeClass">		  
+</pre><pre id="code0" class="unselectable codeClass">			<font color="green">//<b> 주기적으로 활성화되는 타이머 등록 </b></font>
+</pre><pre id="code0" class="unselectable codeClass">			timer = new Timer( 100, new ActionListener() {
+</pre><pre id="code0" class="unselectable codeClass">			                	@Override
+</pre>
+<pre id="codeV2b" class="unselectable codeClass">V2b			                	public void actionPerformed( ActionEvent event ) {
+</pre>
+<pre id="codeV21" class="unselectable codeClass">V21			                		update();
+</pre>
+<pre id="codeV22" class="unselectable codeClass">V22			                		repaint();
+</pre>
+<pre id="codeV2e" class="unselectable codeClass">V2e			                	}
+</pre><pre id="code0" class="unselectable codeClass">			                });
+</pre><pre id="code0" class="unselectable codeClass">			timer.start();
+</pre>
+<pre id="codeV1e" class="unselectable codeClass">V1e		}
+</pre><pre id="code0" class="unselectable codeClass">		  
+</pre><pre id="code0" class="unselectable codeClass">		<font color="green">//<b> 최신 정보 업데이트  </b></font>
+</pre>
+<pre id="codeV3b" class="unselectable codeClass">V3b		protected void update() {
+</pre>
+<pre id="codeV31" class="unselectable codeClass">V31			character.move();
+</pre>
+<pre id="codeV3e" class="unselectable codeClass">V3e		}
+</pre><pre id="code0" class="unselectable codeClass">		  
+</pre><pre id="code0" class="unselectable codeClass">		<font color="green">//<b> 화면 출력 </b></font>
+</pre><pre id="code0" class="unselectable codeClass">		@Override
+</pre>
+<pre id="codeV4b" class="unselectable codeClass">V4b		public void paint( Graphics g ){
+</pre><pre id="code0" class="unselectable codeClass">			super.paint( g );
+</pre>
+<pre id="codeV41" class="unselectable codeClass">V41			character.paint( g );
+</pre>
+<pre id="codeV4e" class="unselectable codeClass">V4e		}
+</pre><pre id="code0" class="unselectable codeClass">	}
+</pre><pre id="code0" class="unselectable codeClass">		  
+</pre><pre id="code0" class="unselectable codeClass">		  
+</pre><pre id="code0" class="unselectable codeClass">	<font color="green">// 파일명 : ./src/move/SideViewObject.java</font>
+</pre><pre id="code0" class="unselectable codeClass">	package move;
+</pre><pre id="code0" class="unselectable codeClass">		  
+</pre><pre id="code0" class="unselectable codeClass">	import java.awt.*;
+</pre><pre id="code0" class="unselectable codeClass">	import java.awt.event.*;
+</pre><pre id="code0" class="unselectable codeClass">		  
+</pre><pre id="code0" class="unselectable codeClass">	<font color="green">//<b> 사이드 뷰 캐릭터 </b></font>
+</pre><pre id="code0" class="unselectable codeClass">	public <a href='../Jf1i/Jf1i0.html' target='keyword'>class</a> SideViewObject extends TopViewObject
+</pre><pre id="code0" class="unselectable codeClass">	{
+</pre><pre id="code0" class="unselectable codeClass">		private final int SCOPE = 3;
+</pre><pre id="code0" class="unselectable codeClass">		  
+</pre>
+<pre id="codeS1b" class="unselectable codeClass">S1b		public SideViewObject( int[][] map, int x, int y, String imagePath ) {
+</pre>
+<pre id="codeS11" class="unselectable codeClass">S11			super( map, x, y, imagePath );
+</pre>
+<pre id="codeS1e" class="unselectable codeClass">S1e		}
+</pre><pre id="code0" class="unselectable codeClass">		  
+</pre><pre id="code0" class="unselectable codeClass">		<font color="green">//<b> 키를 누르면 이동방향을 설정하거나 점프 이동  </b></font>
+</pre><pre id="code0" class="unselectable codeClass">		@Override
+</pre>
+<pre id="codeS2b" class="unselectable codeClass">S2b		public void keyPressed( KeyEvent event ) {
+</pre>
+<pre id="codeS21" class="unselectable codeClass">S21			super.keyPressed( event );
+</pre><pre id="code0" class="unselectable codeClass">			switch( event.getKeyCode() ) {
+</pre><pre id="code0" class="unselectable codeClass">			case 'Q' :  case 'q' :
+</pre><pre id="code0" class="unselectable codeClass">				jump( LEFT );
+</pre><pre id="code0" class="unselectable codeClass">				break;
+</pre><pre id="code0" class="unselectable codeClass">			case 'E' :  case 'e' :
+</pre>
+<pre id="codeS22" class="unselectable codeClass">S22				jump( RIGHT );
+</pre><pre id="code0" class="unselectable codeClass">				break;
+</pre><pre id="code0" class="unselectable codeClass">			}
+</pre>
+<pre id="codeS2e" class="unselectable codeClass">S2e		}
+</pre><pre id="code0" class="unselectable codeClass">		  
+</pre><pre id="code0" class="unselectable codeClass">		<font color="green">// 위쪽이 비어있으면 캐릭터 점프 이동</font>
+</pre>
+<pre id="codeS3b" class="unselectable codeClass">S3b		public void jump( int directionX ) {
+</pre><pre id="code0" class="unselectable codeClass">			final int JUMP_HEIGHT = 2;
+</pre><pre id="code0" class="unselectable codeClass">			for( int i = 1; i &lt;= JUMP_HEIGHT; i++ ) {
+</pre><pre id="code0" class="unselectable codeClass">				if( map[y+i*UP ][x]== WALL )
+</pre><pre id="code0" class="unselectable codeClass">					return;
+</pre><pre id="code0" class="unselectable codeClass">			}
+</pre>
+<pre id="codeS31" class="unselectable codeClass">S31			move( directionX, UP*JUMP_HEIGHT );
+</pre>
+<pre id="codeS3e" class="unselectable codeClass">S3e		}
+</pre><pre id="code0" class="unselectable codeClass">		  
+</pre><pre id="code0" class="unselectable codeClass">		<font color="green">//<b> 바닥까지 캐릭터 자유 낙하   </b></font>
+</pre><pre id="code0" class="unselectable codeClass">		@Override
+</pre>
+<pre id="codeS4b" class="unselectable codeClass">S4b		public void move( int directionX, int directionY ) {
+</pre><pre id="code0" class="unselectable codeClass">			for(; ( map[y+directionY ][x+directionX]!= WALL ) && ( map[y+directionY+1 ][x+directionX]!= WALL ); directionY++ );
+</pre>
+<pre id="codeS41" class="unselectable codeClass">S41			super.move( directionX, directionY );
+</pre>
+<pre id="codeS4e" class="unselectable codeClass">S4e		}
+</pre><pre id="code0" class="unselectable codeClass">		  
+</pre><pre id="code0" class="unselectable codeClass">		<font color="green">//<b> 캐릭터와 주변 맵을 출력 </b></font>
+</pre><pre id="code0" class="unselectable codeClass">		@Override
+</pre>
+<pre id="codeS5b" class="unselectable codeClass">S5b		public void paint( Graphics g ){
+</pre><pre id="code0" class="unselectable codeClass">			for( int y = this.y - SCOPE, y2 = 0; y &lt;= this.y + SCOPE; y++, y2++ ){
+</pre><pre id="code0" class="unselectable codeClass">				for( int x = this.x - SCOPE, x2 = 0; x &lt;= this.x + SCOPE; x++, x2++ ){
+</pre><pre id="code0" class="unselectable codeClass">					int index = WALL;
+</pre><pre id="code0" class="unselectable codeClass">					if ( ( this.x == x ) && ( this.y == y ) )
+</pre><pre id="code0" class="unselectable codeClass">						index = CHARACTER;
+</pre><pre id="code0" class="unselectable codeClass">					else if ( ( minX &lt;= x ) && ( x &lt;= maxX ) && ( minY &lt;= y ) && ( y &lt;= maxY ) )
+</pre><pre id="code0" class="unselectable codeClass">						index = map[y ][x];
+</pre><pre id="code0" class="unselectable codeClass">					g.drawImage( image[index], x2*IMGSIZE, y2*IMGSIZE, IMGSIZE, IMGSIZE, null );
+</pre><pre id="code0" class="unselectable codeClass">				}
+</pre><pre id="code0" class="unselectable codeClass">			}
+</pre>
+<pre id="codeS5e" class="unselectable codeClass">S5e		}
+</pre><pre id="code0" class="unselectable codeClass">		  
+</pre><pre id="code0" class="unselectable codeClass">		@Override
+</pre><pre id="code0" class="unselectable codeClass">		public int backgroundWidth(){
+</pre><pre id="code0" class="unselectable codeClass">			return IMGSIZE * ( 2*SCOPE + 1 );
+</pre><pre id="code0" class="unselectable codeClass">		}
+</pre><pre id="code0" class="unselectable codeClass">		@Override
+</pre><pre id="code0" class="unselectable codeClass">		public int backgroundHeight(){
+</pre><pre id="code0" class="unselectable codeClass">			return IMGSIZE * ( 2*SCOPE + 1 );
+</pre><pre id="code0" class="unselectable codeClass">		}
+</pre><pre id="code0" class="unselectable codeClass">	}
+</pre><pre id="code0" class="unselectable codeClass">		  
+</pre><pre id="code0" class="unselectable codeClass">		  
+</pre><pre id="code0" class="unselectable codeClass">	<font color="green">// 파일명 : ./src/move/TopViewObject.java</font>
+</pre><pre id="code0" class="unselectable codeClass">	package move;
+</pre><pre id="code0" class="unselectable codeClass">		  
+</pre><pre id="code0" class="unselectable codeClass">	import java.awt.*;
+</pre><pre id="code0" class="unselectable codeClass">	import javax.swing.*;
+</pre><pre id="code0" class="unselectable codeClass">		  
+</pre><pre id="code0" class="unselectable codeClass">	<font color="green">//<b> 탑 뷰 캐릭터 </b></font>
+</pre><pre id="code0" class="unselectable codeClass">	public <a href='../Jf1i/Jf1i0.html' target='keyword'>class</a> TopViewObject extends ObjectByKey
+</pre><pre id="code0" class="unselectable codeClass">	{
+</pre><pre id="code0" class="unselectable codeClass">		protected int[][] map;
+</pre><pre id="code0" class="unselectable codeClass">		protected Image[] image;
+</pre><pre id="code0" class="unselectable codeClass">		protected final int PATH = 0, WALL = 1, CHARACTER = 2;
+</pre><pre id="code0" class="unselectable codeClass">		  
+</pre>
+<pre id="codeT1b" class="unselectable codeClass">T1b		public TopViewObject( int[][] map, int x, int y, final String imagePath ) {
+</pre>
+<pre id="codeT11" class="unselectable codeClass">T11			super( imagePath+"character.png", x, y, 0, 0, map[0].length-1, map.length-1 );
+</pre><pre id="code0" class="unselectable codeClass">			this.map = map;
+</pre><pre id="code0" class="unselectable codeClass">			this.image = new Image[3];
+</pre><pre id="code0" class="unselectable codeClass">			this.image[PATH    ]= new ImageIcon( imagePath + "path.png" ).getImage();
+</pre><pre id="code0" class="unselectable codeClass">			this.image[WALL    ]= new ImageIcon( imagePath + "wall.png" ).getImage();
+</pre><pre id="code0" class="unselectable codeClass">			this.image[CHARACTER]= new ImageIcon( imagePath + "character.png" ).getImage();
+</pre>
+<pre id="codeT1e" class="unselectable codeClass">T1e		}
+</pre><pre id="code0" class="unselectable codeClass">		  
+</pre><pre id="code0" class="unselectable codeClass">		<font color="green">//<b> 벽이 아니면 캐릭터 이동 </b></font>
+</pre><pre id="code0" class="unselectable codeClass">		@Override
+</pre>
+<pre id="codeT2b" class="unselectable codeClass">T2b		public void move( int directionX, int directionY ) {
+</pre><pre id="code0" class="unselectable codeClass">			if( map[y+directionY ][x+directionX]!= WALL )
+</pre>
+<pre id="codeT21" class="unselectable codeClass">T21				super.move( directionX, directionY );
+</pre>
+<pre id="codeT2e" class="unselectable codeClass">T2e		}
+</pre><pre id="code0" class="unselectable codeClass">		  
+</pre><pre id="code0" class="unselectable codeClass">		<font color="green">//<b> 캐릭터와 전체 맵을 출력 </b></font>
+</pre><pre id="code0" class="unselectable codeClass">		@Override
+</pre>
+<pre id="codeT3b" class="unselectable codeClass">T3b		public void paint( Graphics g ){
+</pre><pre id="code0" class="unselectable codeClass">			for( int y = 0; y &lt;= map.length; y++ ){
+</pre><pre id="code0" class="unselectable codeClass">				for( int x = 0; x &lt;= map[0].length; x++ ){
+</pre><pre id="code0" class="unselectable codeClass">					int index = WALL;
+</pre><pre id="code0" class="unselectable codeClass">					if ( ( this.x == x ) && ( this.y == y ) )
+</pre><pre id="code0" class="unselectable codeClass">						index = CHARACTER;
+</pre><pre id="code0" class="unselectable codeClass">					else if ( ( minX &lt;= x ) && ( x &lt;= maxX ) && ( minY &lt;= y ) && ( y &lt;= maxY ) )
+</pre><pre id="code0" class="unselectable codeClass">						index = map[y ][x];
+</pre><pre id="code0" class="unselectable codeClass">					g.drawImage( image[index], x*IMGSIZE, y*IMGSIZE, IMGSIZE, IMGSIZE, null );
+</pre><pre id="code0" class="unselectable codeClass">				}
+</pre><pre id="code0" class="unselectable codeClass">			}
+</pre>
+<pre id="codeT3e" class="unselectable codeClass">T3e		}
+</pre><pre id="code0" class="unselectable codeClass">		  
+</pre><pre id="code0" class="unselectable codeClass">		@Override
+</pre><pre id="code0" class="unselectable codeClass">		public int backgroundWidth(){
+</pre><pre id="code0" class="unselectable codeClass">			return IMGSIZE * ( map[0].length );
+</pre><pre id="code0" class="unselectable codeClass">		}
+</pre><pre id="code0" class="unselectable codeClass">		@Override
+</pre><pre id="code0" class="unselectable codeClass">		public int backgroundHeight(){
+</pre><pre id="code0" class="unselectable codeClass">			return IMGSIZE * ( map.length );
+</pre><pre id="code0" class="unselectable codeClass">		}
+</pre><pre id="code0" class="unselectable codeClass">	}
+</pre><pre id="code0" class="unselectable codeClass">		  
+</pre><pre id="code0" class="unselectable codeClass">		  
+</pre><pre id="code0" class="unselectable codeClass">	<font color="green">// 파일명 : ./src/move/ObjectByKey.java</font>
+</pre><pre id="code0" class="unselectable codeClass">	package move;
+</pre><pre id="code0" class="unselectable codeClass">		  
+</pre><pre id="code0" class="unselectable codeClass">	import java.awt.*;
+</pre><pre id="code0" class="unselectable codeClass">	import java.awt.event.*;
+</pre><pre id="code0" class="unselectable codeClass">	import javax.swing.*;
+</pre><pre id="code0" class="unselectable codeClass">		  
+</pre><pre id="code0" class="unselectable codeClass">	<font color="green">//<b> 방향키로 이동하는 객체 </b></font>
+</pre><pre id="code0" class="unselectable codeClass">	public <a href='../Jf1i/Jf1i0.html' target='keyword'>class</a> ObjectByKey extends KeyAdapter
+</pre><pre id="code0" class="unselectable codeClass">	{
+</pre><pre id="code0" class="unselectable codeClass">		private Image image;
+</pre><pre id="code0" class="unselectable codeClass">		protected int x, y, directionX, directionY;
+</pre><pre id="code0" class="unselectable codeClass">		protected int minX, minY, maxX, maxY;
+</pre><pre id="code0" class="unselectable codeClass">		public static final int LEFT = -1, RIGHT = 1, UP = -1, DOWN = 1, STOP = 0, IMGSIZE = 40;
+</pre><pre id="code0" class="unselectable codeClass">		  
+</pre><pre id="code0" class="unselectable codeClass">		<font color="green">// 초기화 :  이미지, 현재 위치, 이동 허용 범위, 이동 방향을 설정</font>
+</pre>
+<pre id="codeK1b" class="unselectable codeClass">K1b		public ObjectByKey( String image, int x, int y, int minX, int minY, int maxX, int maxY ) {
+</pre><pre id="code0" class="unselectable codeClass">			this.image = new ImageIcon( image ).getImage();
+</pre><pre id="code0" class="unselectable codeClass">			this.x = x;
+</pre><pre id="code0" class="unselectable codeClass">			this.y = y;
+</pre><pre id="code0" class="unselectable codeClass">			this.minX = minX;
+</pre><pre id="code0" class="unselectable codeClass">			this.minY = minY;
+</pre><pre id="code0" class="unselectable codeClass">			this.maxX = maxX;
+</pre><pre id="code0" class="unselectable codeClass">			this.maxY = maxY;
+</pre><pre id="code0" class="unselectable codeClass">			this.directionX = STOP;
+</pre><pre id="code0" class="unselectable codeClass">			this.directionY = STOP;
+</pre>
+<pre id="codeK1e" class="unselectable codeClass">K1e		}
+</pre><pre id="code0" class="unselectable codeClass">		  
+</pre><pre id="code0" class="unselectable codeClass">		<font color="green">//<b> 키를 누르면 상하좌우 이동방향 설정 </b></font>
+</pre><pre id="code0" class="unselectable codeClass">		@Override
+</pre>
+<pre id="codeK2b" class="unselectable codeClass">K2b		public void keyPressed( KeyEvent event ) {
+</pre><pre id="code0" class="unselectable codeClass">			switch( event.getKeyCode() ) {
+</pre><pre id="code0" class="unselectable codeClass">			case KeyEvent.VK_ESCAPE :
+</pre><pre id="code0" class="unselectable codeClass">				System.exit(0);
+</pre><pre id="code0" class="unselectable codeClass">				break;
+</pre><pre id="code0" class="unselectable codeClass">			case KeyEvent.VK_LEFT :  case 'A' :  case 'a' :
+</pre><pre id="code0" class="unselectable codeClass">				directionX = LEFT;
+</pre><pre id="code0" class="unselectable codeClass">				break;
+</pre><pre id="code0" class="unselectable codeClass">			case KeyEvent.VK_RIGHT :  case 'D' :  case 'd' :
+</pre>
+<pre id="codeK21" class="unselectable codeClass">K21				directionX = RIGHT;
+</pre><pre id="code0" class="unselectable codeClass">				break;
+</pre><pre id="code0" class="unselectable codeClass">			case KeyEvent.VK_UP :  case 'W' :  case 'w' :
+</pre><pre id="code0" class="unselectable codeClass">				directionY = UP;
+</pre><pre id="code0" class="unselectable codeClass">				break;
+</pre><pre id="code0" class="unselectable codeClass">			case KeyEvent.VK_DOWN :  case 'S' :  case 's' :
+</pre>
+<pre id="codeK22" class="unselectable codeClass">K22				directionY = DOWN;
+</pre><pre id="code0" class="unselectable codeClass">				break;
+</pre><pre id="code0" class="unselectable codeClass">			}
+</pre>
+<pre id="codeK2e" class="unselectable codeClass">K2e		}
+</pre><pre id="code0" class="unselectable codeClass">		  
+</pre><pre id="code0" class="unselectable codeClass">		<font color="green">//<b> 키를 해제하면 이동방향 해제   </b></font>
+</pre><pre id="code0" class="unselectable codeClass">		@Override
+</pre>
+<pre id="codeK3b" class="unselectable codeClass">K3b		public void keyReleased( KeyEvent event ) {
+</pre><pre id="code0" class="unselectable codeClass">			switch( event.getKeyCode() ) {
+</pre><pre id="code0" class="unselectable codeClass">			case KeyEvent.VK_LEFT :  case 'A' :  case 'a' :
+</pre><pre id="code0" class="unselectable codeClass">			case KeyEvent.VK_RIGHT :  case 'D' :  case 'd' :
+</pre>
+<pre id="codeK31" class="unselectable codeClass">K31				directionX = STOP;
+</pre><pre id="code0" class="unselectable codeClass">				break;
+</pre><pre id="code0" class="unselectable codeClass">			case KeyEvent.VK_UP :  case 'W' :  case 'w' :
+</pre><pre id="code0" class="unselectable codeClass">			case KeyEvent.VK_DOWN :  case 'S' :  case 's' :
+</pre><pre id="code0" class="unselectable codeClass">				directionY = STOP;
+</pre><pre id="code0" class="unselectable codeClass">				break;
+</pre><pre id="code0" class="unselectable codeClass">			}
+</pre>
+<pre id="codeK3e" class="unselectable codeClass">K3e		}
+</pre><pre id="code0" class="unselectable codeClass">		  
+</pre><pre id="code0" class="unselectable codeClass">		<font color="green">//<b> 이동 허용 범위내에서만 객체 이동 </b></font>
+</pre>
+<pre id="codeK4b" class="unselectable codeClass">K4b		public void move() {
+</pre>
+<pre id="codeK41" class="unselectable codeClass">K41			move( directionX, directionY );
+</pre>
+<pre id="codeK4e" class="unselectable codeClass">K4e		}
+</pre>
+<pre id="codeK5b" class="unselectable codeClass">K5b		public void move( int directionX, int directionY ) {
+</pre><pre id="code0" class="unselectable codeClass">			this.x += directionX;
+</pre><pre id="code0" class="unselectable codeClass">			this.y += directionY;
+</pre><pre id="code0" class="unselectable codeClass">			this.x = ( this.x &lt;= minX ) ? minX : this.x;
+</pre><pre id="code0" class="unselectable codeClass">			this.y = ( this.y &lt;= minY ) ? minY : this.y;
+</pre><pre id="code0" class="unselectable codeClass">			this.x = ( this.x &gt;= maxX ) ? maxX : this.x;
+</pre><pre id="code0" class="unselectable codeClass">			this.y = ( this.y &gt;= maxY ) ? maxY : this.y;
+</pre>
+<pre id="codeK5e" class="unselectable codeClass">K5e		}
+</pre><pre id="code0" class="unselectable codeClass">		  
+</pre><pre id="code0" class="unselectable codeClass">		<font color="green">// 현재 위치에 객체를 출력</font>
+</pre>
+<pre id="codeK6b" class="unselectable codeClass">K6b		public void paint( Graphics g ) {
+</pre><pre id="code0" class="unselectable codeClass">			g.drawImage( image, x, y, IMGSIZE, IMGSIZE, null );
+</pre>
+<pre id="codeK6e" class="unselectable codeClass">K6e		}
+</pre><pre id="code0" class="unselectable codeClass">		  
+</pre><pre id="code0" class="unselectable codeClass">		public int directionX() {
+</pre><pre id="code0" class="unselectable codeClass">			return directionX;
+</pre><pre id="code0" class="unselectable codeClass">		}
+</pre><pre id="code0" class="unselectable codeClass">		  
+</pre><pre id="code0" class="unselectable codeClass">		public int directionY() {
+</pre><pre id="code0" class="unselectable codeClass">			return directionY;
+</pre><pre id="code0" class="unselectable codeClass">		}
+</pre><pre id="code0" class="unselectable codeClass">		  
+</pre><pre id="code0" class="unselectable codeClass">		public int backgroundWidth(){
+</pre><pre id="code0" class="unselectable codeClass">			return maxX;
+</pre><pre id="code0" class="unselectable codeClass">		}
+</pre><pre id="code0" class="unselectable codeClass">		  
+</pre><pre id="code0" class="unselectable codeClass">		public int backgroundHeight(){
+</pre><pre id="code0" class="unselectable codeClass">			return maxY;
+</pre><pre id="code0" class="unselectable codeClass">		}
+</pre><pre id="code0" class="unselectable codeClass">	}
+</pre></div>	 	 				<br><h4>실행 순서 확인</h4> 				<pre id = "sP3d4" style='white-space:normal; width:800px;'> </pre> 				<br><br><br><br><br><br><br><br> &nbsp;  			</div> 			<div id = "floatingBox" style = "top:200px;left:900px;margin:0px;padding:0px;"> 				<pre id = "outputBox" class ="outputBox" style = "color:White;height:0px;width:0px;padding:0px;margin:0px;"></pre>  				<div id = "intermediateResult"> 					<img id = "sP3d7"> 					<table style = "border-spacing:0px;margin:0px;table-layout:auto;"> 						<tbody id = "sP3d8"></tbody> 					</table> 				</div> 			</div> 		</div> 	</body> </html> 
